@@ -23,10 +23,13 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    display: inline-block;
+    
     font-size: 48px;
 }
 
@@ -39,7 +42,7 @@ header a {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+   
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
