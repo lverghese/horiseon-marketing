@@ -4,15 +4,25 @@
     margin: 0;
 }
 
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #d9d9d9;
+    --sapphire-color: #2a607c;
+    --block-color: #0072bb;
+}
+
 body {
-    background-color: #d9dcd6;
+    background-color: var(--secondary-color);
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--sapphire-color);
+    color: var(--primary-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -22,7 +32,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 
@@ -86,8 +96,8 @@ footer h2 {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: var(--block-color);
+    color: var(--primary-color);
 }
 
 .tips h2 {
@@ -107,12 +117,12 @@ footer h2 {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: var(--block-color);
 }
 
 .benefit-state {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 .benefit-state h3 {
